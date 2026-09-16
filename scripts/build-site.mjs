@@ -250,7 +250,7 @@ const html = `<!doctype html>
 
 writeFileSync(path.join(outDir, "index.html"), html);
 writeFileSync(path.join(outDir, ".nojekyll"), "");
-writeFileSync(path.join(outDir, "CNAME"), "home.jinxinzhao.org\n");
+writeFileSync(path.join(outDir, "CNAME"), "jinxinzhao.org\n");
 
 const notFound = `<!doctype html>
 <html lang="en">

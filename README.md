@@ -19,9 +19,9 @@ For the existing `JinxinMonash/jinxinzhao.github.io` repository:
 2. In GitHub, open **Settings -> Pages**.
 3. Easiest maintenance: set **Source** to "GitHub Actions". The included workflow builds from `src/site-data.json` and deploys `docs/`.
 4. Simple fallback: set **Source** to "Deploy from a branch", branch `main`, folder `/docs`.
-5. Keep `docs/CNAME` if you want `home.jinxinzhao.org`.
+5. Keep `docs/CNAME` if you want `jinxinzhao.org`.
 
-For the custom domain, the DNS for `home.jinxinzhao.org` should point to GitHub Pages with a CNAME record targeting `JinxinMonash.github.io`. GitHub can then issue the HTTPS certificate from **Settings -> Pages**.
+For the custom domain, the DNS for `jinxinzhao.org` should point to GitHub Pages. For an apex/root domain like `jinxinzhao.org`, use GitHub Pages `A` records. If you instead want `home.jinxinzhao.org`, use a CNAME record targeting `JinxinMonash.github.io` and change `docs/CNAME` to `home.jinxinzhao.org`.
 
 ## Files
 

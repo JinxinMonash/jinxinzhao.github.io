@@ -5,7 +5,7 @@
   "metaDescription": "Dr Jinxin Zhao is a computational biologist and antimicrobial pharmacology researcher working across microbiology, bioinformatics, pharmacometrics and systems pharmacology.",
   "email": "Jinxin.zhao@monash.edu",
   "location": "Melbourne, Australia / Hamburg, Germany",
-  "affiliation": "Monash Biomedicine Discovery Institute",
+  "affiliation": "Academic Affiliation: Monash University",
   "heroImage": "assets/hero-systems-pharmacology.png",
   "cvPath": "assets/jinxin-zhao-cv.pdf",
   "links": [
@@ -24,14 +24,14 @@
   ],
   "currentRoles": [
     {
-      "title": "Humboldt Fellow / Group Leader",
+      "title": "Humboldt Research Fellow",
       "place": "University of Hamburg, Germany",
       "period": "May 2026 - present"
     },
     {
-      "title": "Research Fellow, Computational Biologist / Bioinformatician / Pharmacometrician",
-      "place": "Li's Laboratory of Antimicrobial Systems Pharmacology, Monash University",
-      "period": "May 2021 - present"
+      "title": "Visiting Professor",
+      "place": "Center of Excellence for Vectors and Vector-Borne Diseases, Mahidol University",
+      "period": "Current"
     },
     {
       "title": "Conference Scientific Committee Member",
@@ -55,7 +55,7 @@
     },
     {
       "value": "2026",
-      "label": "Humboldt Fellow / Group Leader"
+      "label": "Humboldt Research Fellow"
     },
     {
       "value": "MDR",
