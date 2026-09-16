@@ -32,6 +32,12 @@ const linkList = data.links
   .map((link) => `<a class="pill-link" href="${esc(absolute(link.url))}">${esc(link.label)}</a>`)
   .join("");
 
+const heroEyebrow = data.affiliation ? `<p class="eyebrow">${esc(data.affiliation)}</p>` : "";
+
+const contactEmails = (data.emails?.length ? data.emails : [data.email])
+  .map((email) => `<a class="email-link" href="mailto:${esc(email)}">${esc(email)}</a>`)
+  .join("");
+
 const stats = data.stats
   .map(
     (stat) => `
@@ -145,7 +151,7 @@ const html = `<!doctype html>
   <main>
     <header class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">${esc(data.affiliation)}</p>
+        ${heroEyebrow}
         <h1>${esc(data.name)}</h1>
         <p class="tagline">${esc(data.tagline)}</p>
         <div class="hero-actions">
@@ -235,7 +241,7 @@ const html = `<!doctype html>
         <p class="eyebrow">Contact</p>
         <h2>Let us talk antimicrobial pharmacology, omics and modelling.</h2>
         <p>${esc(data.location)}</p>
-        <a class="email-link" href="mailto:${esc(data.email)}">${esc(data.email)}</a>
+        <div class="email-list">${contactEmails}</div>
       </div>
     </section>
   </main>

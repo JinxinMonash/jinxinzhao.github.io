@@ -3,9 +3,13 @@
   "shortName": "Jinxin Zhao",
   "tagline": "Computational biology, systems pharmacology and AI for antimicrobial therapy.",
   "metaDescription": "Dr Jinxin Zhao is a computational biologist and antimicrobial pharmacology researcher working across microbiology, bioinformatics, pharmacometrics and systems pharmacology.",
-  "email": "Jinxin.zhao@monash.edu",
-  "location": "Melbourne, Australia / Hamburg, Germany",
-  "affiliation": "Academic Affiliation: Monash University",
+  "email": "jinxin.zhao@uni-hamburg.de",
+  "emails": [
+    "jinxin.zhao@uni-hamburg.de",
+    "Jinxin.zhao@monash.edu"
+  ],
+  "location": "Hamburg, Germany / Melbourne, Australia",
+  "affiliation": "",
   "heroImage": "assets/hero-systems-pharmacology.png",
   "cvPath": "assets/jinxin-zhao-cv.pdf",
   "links": [
@@ -19,7 +23,7 @@
     },
     {
       "label": "Email",
-      "url": "mailto:Jinxin.zhao@monash.edu"
+      "url": "mailto:jinxin.zhao@uni-hamburg.de"
     }
   ],
   "currentRoles": [
@@ -34,9 +38,9 @@
       "period": "Current"
     },
     {
-      "title": "Conference Scientific Committee Member",
-      "place": "International Society of Antimicrobial Chemotherapy",
-      "period": "Feb 2021 - present"
+      "title": "Lead Scientist",
+      "place": "Monash University, Australia",
+      "period": "May 2021 - present"
     },
     {
       "title": "Conference Organising Committee Member",
