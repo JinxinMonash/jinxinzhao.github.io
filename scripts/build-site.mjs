@@ -4,6 +4,7 @@ import path from "node:path";
 const root = process.cwd();
 const data = JSON.parse(readFileSync(path.join(root, "src/site-data.json"), "utf8"));
 const outDir = path.join(root, "docs");
+const assetVersion = "20260916-email-icons";
 
 mkdirSync(path.join(outDir, "assets"), { recursive: true });
 copyFileSync(path.join(root, "src/site-data.json"), path.join(outDir, "site-data.json"));
@@ -38,8 +39,8 @@ const contactEmails = (data.emails?.length ? data.emails : [data.email])
   .map(
     (email) => `
           <a class="email-link" href="mailto:${esc(email)}">
-            <span class="email-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" focusable="false">
+            <span class="email-icon" aria-hidden="true" style="display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;min-width:24px;border-radius:50%;background:#000;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false" style="display:block;width:15px;height:15px;">
                 <path d="M5 7h14v10H5z"/>
                 <path d="m5 8 7 5 7-5"/>
               </svg>
@@ -155,7 +156,7 @@ const html = `<!doctype html>
   <meta property="og:image" content="${esc(data.heroImage)}">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preload" href="${esc(data.heroImage)}" as="image">
-  <link rel="stylesheet" href="assets/site.css">
+  <link rel="stylesheet" href="assets/site.css?v=${assetVersion}">
 </head>
 <body>
   ${nav}
@@ -277,7 +278,7 @@ const notFound = `<!doctype html>
   <title>Page not found | ${esc(data.name)}</title>
   <meta name="description" content="The requested page is not available.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/site.css">
+  <link rel="stylesheet" href="assets/site.css?v=${assetVersion}">
 </head>
 <body>
   ${nav}
