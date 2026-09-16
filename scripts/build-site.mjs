@@ -35,8 +35,17 @@ const linkList = data.links
 const heroEyebrow = data.affiliation ? `<p class="eyebrow">${esc(data.affiliation)}</p>` : "";
 
 const contactEmails = (data.emails?.length ? data.emails : [data.email])
-  .map((email) => `<a class="email-link" href="mailto:${esc(email)}">${esc(email)}</a>`)
-  .join("");
+  .map(
+    (email) => `
+          <a class="email-link" href="mailto:${esc(email)}">
+            <svg class="email-icon" aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+              <path d="M4 6h16v12H4z"/>
+              <path d="m4 7 8 6 8-6"/>
+            </svg>
+            <span>${esc(email)}</span>
+          </a>`
+  )
+  .join("\n");
 
 const stats = data.stats
   .map(

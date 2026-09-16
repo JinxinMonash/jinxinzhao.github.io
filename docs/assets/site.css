@@ -427,15 +427,29 @@ h1 {
 
 .email-list {
   display: grid;
-  gap: 6px;
+  gap: 8px;
   margin-top: 12px;
 }
 
 .email-link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   color: var(--teal-dark);
   font-size: 1.08rem;
   font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.email-icon {
+  flex: 0 0 auto;
+  width: 1.1em;
+  height: 1.1em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .not-found {
