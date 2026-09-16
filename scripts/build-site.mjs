@@ -38,10 +38,12 @@ const contactEmails = (data.emails?.length ? data.emails : [data.email])
   .map(
     (email) => `
           <a class="email-link" href="mailto:${esc(email)}">
-            <svg class="email-icon" aria-hidden="true" viewBox="0 0 24 24" focusable="false">
-              <path d="M4 6h16v12H4z"/>
-              <path d="m4 7 8 6 8-6"/>
-            </svg>
+            <span class="email-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M5 7h14v10H5z"/>
+                <path d="m5 8 7 5 7-5"/>
+              </svg>
+            </span>
             <span>${esc(email)}</span>
           </a>`
   )
